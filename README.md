@@ -1,31 +1,58 @@
-Tetris Game in C++
+# 🕹️ Tetris Game in C++
 
-Welcome to the Tetris Game project! This is a personal project created in C++ using the Qt framework, CMake, and the MinGW 6.5.3 compiler. The project offers two modes of gameplay: a console-based version and a graphical interface powered by Qt. It is organized with a Model-View architecture for a clean separation of concerns and modularity.
+Welcome to the **Tetris Game** project! This is a personal project developed in **C++** featuring two distinct gameplay modes: a modern **graphical interface (GUI)** and a classic **console experience**.
 
-Project Overview
+The project focuses on a **clean, maintainable structure** using the **Model-View Architecture** to ensure high modularity and easy future extensions.
 
-This Tetris project was developed with the following key elements:
+---
 
-    - Programming Language: C++
-    - IDE: Qt Creator
-    - Compiler: MinGW 6.5.3
-    - Build System: CMake (using CMakeLists.txt for configuration)
-    - Framework: Qt for the graphical user interface
-    - Architecture: Model-View for a modular and maintainable structure
-    
-    Features :
-        - Console Version: Play Tetris directly from the console, providing a lightweight, text-based experience.
-        - Graphical Version: Enjoy a full graphical version of the game built with Qt components for an enhanced Tetris experience.
-        - Modular Design: The project is organized with a Model-View architecture to separate game logic (model) from the user interface (view).
-        
-Project Structure
+## ✨ Key Features
 
-The project consists of the following main components:
+| Feature                  | Description                                                                 |
+|---------------------------|-----------------------------------------------------------------------------|
+| Dual Interface            | Play in a classic text-based **Console Version** or a full **Graphical Version (GUI)**. |
+| Qt Powered GUI            | The graphical version is built using the **Qt Framework** for a modern visual experience. |
+| Modular Design (Model-View)| Separation of game logic (**Model**) from presentation (**View**) for reusable and maintainable code. |
+| Standard Build            | Uses **CMake** for configuration, compatible across multiple operating systems. |
 
-    Model: Manages the core logic of Tetris, including piece generation, movement, collision detection, and scoring. The model is independent of any UI framework, making it reusable for both console and graphical interfaces.
+---
 
-    View: Contains both the console-based and graphical-based views for the game. The console view directly interacts with the terminal, while the graphical view uses Qt widgets and components to render the game interface.
+## 💻 Tech Stack & Architecture
 
-    Controller (optional): May handle the communication between the model and view, especially useful in the graphical version for capturing user inputs and updating the display.
+**Development Environment:**
+- **Language:** C++ (C++20 standard)  
+- **GUI Framework:** Qt (Widgets and Graphics)  
+- **Build System:** CMake (`CMakeLists.txt`)  
+- **Compiler:** MinGW 6.5.3  
+- **IDE:** Qt Creator  
 
-By Douchar Vincent.
+**Architecture (Model-View):**
+- **Model (Core Logic):** Handles Tetris mechanics: piece generation, movement, rotation, collision detection, and scoring. Fully UI-agnostic.  
+- **View (Presentation):** Manages display logic for both interfaces. The GUI uses Qt widgets; the Console version uses terminal output.  
+- **Controller (Input/Update):** Handles keyboard input and relays instructions to the Model, triggering updates in the View.
+
+---
+
+## 📥 Getting Started & Installation
+
+You can play the game by either **downloading the executable** or **building from source**.
+
+### Option A: Download Executable (Recommended)
+- No compilation required. Ready to run.
+- Go to the [Releases Page](https://github.com/vdouchar/Tetris/releases).  
+- Download the ZIP for your OS (`Tetris_v1.0_Windows.zip`).  
+- Unzip and run the main executable (`Tetris.exe`).
+
+### Option B: Build from Source (For macOS/Linux Users or Developers)
+- Requires Qt Creator or a C++ compiler and CMake.  
+
+```bash
+git clone https://github.com/vdouchar/Tetris.git
+cd tetris
+```
+- Open the project folder in Qt Creator and run the build process. 
+- Alternatively, use CMake to configure and build for your platform. 
+
+## 👨‍💻 Author
+
+Vincent Douchar - [@vdouchar](https://github.com/vdouchar)
